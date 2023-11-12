@@ -49,7 +49,7 @@ return [
             'host' => env('DB_HOST', 'srv1181.hstgr.io'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'dblaravel '),
-            'username' => env('DB_USERNAME', 'u196527904_diplomado'),
+            'username' => env('DB_USERNAME', 'diplomado'),
             'password' => env('DB_PASSWORD', 'diplomado123'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
