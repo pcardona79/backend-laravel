@@ -45,7 +45,7 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL','https://apis.diplomadoisucomfamiliar.net'),
+            //'url' => env('DATABASE_URL','https://apis.diplomadoisucomfamiliar.net'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'DBlaravel '),
