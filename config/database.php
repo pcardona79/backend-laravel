@@ -46,7 +46,7 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             //'url' => env('DATABASE_URL','https://apis.diplomadoisucomfamiliar.net'),
-            'host' => env('DB_HOST', 'srv1181.hstgr.io'),
+            'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'u196527904_dblaravel'),
             'username' => env('DB_USERNAME', 'u196527904_diplomado'),
