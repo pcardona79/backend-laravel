@@ -42,14 +42,24 @@ require __DIR__.'/../vendor/autoload.php';
 | the application's HTTP kernel. Then, we will send the response back
 | to this client's browser, allowing them to enjoy our application.
 |
-*/
+*/  
+//localhost
 
-$app = require_once __DIR__.'/../bootstrap/app.php';
+// $app = require_once __DIR__.'/../bootstrap/app.php';
 
-$kernel = $app->make(Kernel::class);
+// $kernel = $app->make(Kernel::class);
 
+// $response = $kernel->handle(
+//     $request = Request::capture()
+// )->send();
+
+// $kernel->terminate($request, $response);
+
+
+$app = require_once __DIR__.'/../laravel/bootstrap/app.php';
+$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 $response = $kernel->handle(
-    $request = Request::capture()
-)->send();
-
+    $request = Illuminate\Http\Request::capture()
+);
+$response->send();
 $kernel->terminate($request, $response);
