@@ -48,9 +48,14 @@ return [
             //'url' => env('DATABASE_URL','https://apis.diplomadoisucomfamiliar.net'),
             'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'u196527904_dblaravel'),
-            'username' => env('DB_USERNAME', 'u196527904_diplomado'),
-            'password' => env('DB_PASSWORD', 'Diplomado123'),
+            //'database' => env('DB_DATABASE', 'u196527904_dblaravel'),
+            //'username' => env('DB_USERNAME', 'u196527904_diplomado'),
+            //'password' => env('DB_PASSWORD', 'Diplomado123'),
+
+            'database' => env('DB_DATABASE', 'dblaravel'),
+            'username' => env('DB_USERNAME', 'root'),
+            'password' => env('DB_PASSWORD', ''),
+
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
