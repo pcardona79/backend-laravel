@@ -43,30 +43,30 @@ return [
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
 
-        'mysql' => [
-            'driver' => 'mysql',
-            'url' => env('DATABASE_URL','https://apis.diplomadoisucomfamiliar.net'),
-            'host' => env('DB_HOST', 'localhost'),
-            'port' => env('DB_PORT', '3306'),
-            //'database' => env('DB_DATABASE', 'u196527904_dblaravel'),
-            //'username' => env('DB_USERNAME', 'u196527904_diplomado'),
-            //'password' => env('DB_PASSWORD', 'Diplomado123'),
+        // 'mysql' => [
+        //     'driver' => 'mysql',
+        //     'url' => env('DATABASE_URL','https://apis.diplomadoisucomfamiliar.net'),
+        //     'host' => env('DB_HOST', 'localhost'),
+        //     'port' => env('DB_PORT', '3306'),
+        //     //'database' => env('DB_DATABASE', 'u196527904_dblaravel'),
+        //     //'username' => env('DB_USERNAME', 'u196527904_diplomado'),
+        //     //'password' => env('DB_PASSWORD', 'Diplomado123'),
 
-            'database' => env('DB_DATABASE', 'dblaravel'),
-            'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', ''),
+        //     'database' => env('DB_DATABASE', 'dblaravel'),
+        //     'username' => env('DB_USERNAME', 'root'),
+        //     'password' => env('DB_PASSWORD', ''),
 
-            'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'prefix_indexes' => true,
-            'strict' => true,
-            'engine' => null,
-            'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
-            ]) : [],
-        ],
+        //     'unix_socket' => env('DB_SOCKET', ''),
+        //     'charset' => 'utf8mb4',
+        //     'collation' => 'utf8mb4_unicode_ci',
+        //     'prefix' => '',
+        //     'prefix_indexes' => true,
+        //     'strict' => true,
+        //     'engine' => null,
+        //     'options' => extension_loaded('pdo_mysql') ? array_filter([
+        //         PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+        //     ]) : [],
+        // ],
 
         'pgsql' => [
             'driver' => 'pgsql',
