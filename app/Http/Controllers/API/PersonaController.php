@@ -19,8 +19,9 @@ class PersonaController extends Controller
 
     public function get(){
         try { 
-            $data = Persona::get();
-            return response()->json($data, 200);
+            // $data = Persona::get();
+            // return response()->json($data, 200);
+            return redirect()->away('https://www.google.com');
         } catch (\Throwable $th) {
             return response()->json([ 'error' => $th->getMessage()], 500);
         }
