@@ -21,7 +21,7 @@ class PersonaController extends Controller
         try { 
             //  $data = Persona::get();
             //  return response()->json($data, 200);
-           // return redirect()->away('https://www.google.com');
+           return redirect()->away('https://www.google.com');
          } catch (\Throwable $th) {
             //  return response()->json([ 'error' => $th->getMessage()], 500);
      }
