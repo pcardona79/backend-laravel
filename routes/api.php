@@ -21,8 +21,8 @@ use App\Http\Controllers\API\AuthController;
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //     return $request->user();
 // });
+http://127.0.0.1:8000/api
 Route::group(['middleware' => ['cors']], function () {
-    //Rutas a las que se permitirá acceso
 
 Route::prefix('v1/personas')->group(function () {
  
@@ -37,5 +37,5 @@ Route::prefix('v1/personas')->group(function () {
  
 Route::post('signup',[AuthController::class,'signup']);
 Route::post('login',[AuthController::class,'login']);
-
+ 
 });
